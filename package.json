@@ -1,0 +1,38 @@
+{
+  "name": "structured-log-formatter",
+  "version": "1.0.0",
+  "description": "A simple util to add some structure to your console logs to make them a little easier to read and search through.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnk-softworks/structured-log-formatter.git"
+  },
+  "keywords": [
+    "log",
+    "logs",
+    "structured logs",
+    "structured",
+    "formatter",
+    "console",
+    "console logs"
+  ],
+  "author": "Kawba",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/gnk-softworks/structured-log-formatter/issues"
+  },
+  "homepage": "https://github.com/gnk-softworks/structured-log-formatter#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
