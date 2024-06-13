@@ -1,6 +1,6 @@
 {
   "name": "structured-log-formatter",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A simple util to add some structure to your console logs to make them a little easier to read and search through.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
