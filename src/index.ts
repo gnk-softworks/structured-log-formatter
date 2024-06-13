@@ -10,3 +10,18 @@ function formatPairs(pairs: Record<string, string>): string {
 function formatPair([key, value]: [string, string]): string {
     return `${key}='${value}'`;
 }
+
+declare global {
+    interface Console {
+        structuredLog(action: string, status: string, pairs?: Record<string, string>): void;
+    }
+}
+
+function structuredLog(action: string, status: string, pairs?: Record<string, string>): void {
+    const formattedMessage = format(action, status, pairs);
+    console.log(formattedMessage);
+}
+
+export function setupStructuredLog(): void {
+    console.structuredLog = structuredLog;
+}
